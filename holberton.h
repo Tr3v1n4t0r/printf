@@ -13,7 +13,8 @@ char *_strncat(char *dest, char *src, int n);
 char *_strncpy(char *dest, char *src, int n);
 int _strcmp(char *s1, char *s2);
 int _putchar(char c);
-
+int _power(int base, int exponent);
+int _len(int num);
 
 typedef struct type
 {
