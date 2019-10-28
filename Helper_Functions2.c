@@ -53,3 +53,19 @@ int _power(int base, int exponent)
 	}
 	return (result);
 }
+
+/**
+ * _len - functions for counting integers.
+ * @num: is the number passing through.
+ * Return:- this will return count.
+ */
+int _len(int num)
+{
+	int count;
+
+	for (count = 0; num > 0; count++)
+	{
+		num /= 10;
+	}
+	return (count);
+}
