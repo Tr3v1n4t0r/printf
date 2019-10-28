@@ -47,7 +47,7 @@ int _power(int base, int exponent)
 {
 	int result = 1;
 
-	for (exponent; exponent > 0; exponent--)
+	for ( ; exponent > 0; exponent--)
 	{
 		result = result * base;
 	}
