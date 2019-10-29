@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <limits.h>
+#include <stdarg.h>
 
 int _printf(const char *format, ...);
 int _strlen(char *s);
@@ -15,11 +16,8 @@ int _strcmp(char *s1, char *s2);
 int _putchar(char c);
 int _power(int base, int exponent);
 int _len(int num);
-
-typedef struct type
-{
-	char type;
-	void (*f)(char *, int);
-} type_t;
+int type_c(char);
+int type_s(char *);
+int type_i(int);
 
 #endif
