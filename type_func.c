@@ -60,7 +60,7 @@ int type_s(char *s)
 }
 
 /**
- *type_d - prints an integer in decimal
+ *type_i - prints an integer
  *
  *@d: integer to print
  *
@@ -69,8 +69,9 @@ int type_s(char *s)
 int type_i(int d)
 {
 	int i = _len(d);
+	int a = i * 4;
 
 	for (; i > 0; i--)
 		_putchar(d % _power(10, i));
-	return (i);
+	return (a);
 }
