@@ -1,6 +1,6 @@
 # printf
 
-This printf function is a reimagining of the standard printf verison. Our printf 
+This printf function is a reimagining of the standard printf version. Our printf 
 produce an output according to a format for project. when used, you will be able 
 print using the Sentences, Length, Negative, Unsigned, Character, String,
 Address, Percent, Len and Unknown. By following the framework, every mandatory
