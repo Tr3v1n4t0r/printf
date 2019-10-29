@@ -37,9 +37,11 @@ int type_R(char *s)
  */
 int type_c(char c)
 {
+	int i = 1;
+
 	_putchar(c);
 
-	return (1);
+	return (i);
 }
 
 /**
@@ -64,12 +66,12 @@ int type_s(char *s)
  *
  *@d: integer to print
  *
- *Return - number of characters printed
+ *Return: number of characters printed
  */
 int type_i(int d)
 {
 	int i = _len(d);
-	int a = i * 4;
+	int a = i;
 
 	for (; i > 0; i--)
 		_putchar(d % _power(10, i));
