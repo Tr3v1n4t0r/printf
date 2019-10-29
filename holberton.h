@@ -19,5 +19,6 @@ int _len(int num);
 int type_c(char);
 int type_s(char *);
 int type_i(int);
+void rev_string(char *s);
 
 #endif
