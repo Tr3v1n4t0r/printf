@@ -1,0 +1,51 @@
+./" This is the manpage of printf project
+.TH man_3_printf "10-28-2019" "V1.0" "printf man page"
+
+.SH NAME
+printf -- formatted output
+
+.SH SYNOPSIS
+printf format [arguments ...]
+
+.SH DESCRIPTION
+This printf function is a reimagining of the standard printf verison. Our printf
+produce an output according to a format for project. when used, you will be able
+print using the Sentences, Length, Negative, Unsigned, Character, String,
+Address, Percent, Len and Unknown.
+
+.SH AUTHORS
+Trevor Stevenson & Kenneth Fernandez
+
+.SH FUNCTIONS
+The function that are used in our printf project will be provided below.
+
+.IP _strcpy
+ This is our function of copying a string pointed to by source.
+
+.IP _strlen
+This is our function to get a string length by using c as the
+counter and a for loop to counter through the string hits zero
+
+.IP _strncat
+This is our concatenate function that takes two strings and link them together.
+
+.IP _strncpy
+This function does the same as strcpy, except most bytes of the source string is
+copied.
+
+.IP _strcmp
+This function does a comparison of two strings and by incrementing through each
+and when it doesn't match, it breaks out of the for loop and returns string 1
+and string 2.
+
+.IP _strchr
+
+.IP _power
+This is our power function that multiple base to the power. this will be used to
+decimal points and the secondary numbers.
+
+.IP _len
+this is a length function for integers.
+
+.SH HISTORY
+created by Trevor Stevenson & Kenneth Fernandez on 10-28-2019.
