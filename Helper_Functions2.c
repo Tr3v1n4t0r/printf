@@ -72,29 +72,21 @@ int _len(int num)
 
 /**
  * rev_string - function that reserves a string.
- * @s: str held the word Holberton and putting it in reverse.
+ * @buffer: str held the word Holberton and putting it in reverse.
+ * @i: start of buffer.
+ * @j: end of buffer.
  * Return: Always 0.
  */
 
-void rev_string(char *s)
+char* rev_string(char *buffer, int i, int j)
 {
-	char *x = s;
-	char y;
-	int counter;
+	char t;
 
-	counter = 0;
-
-	for (; *s != '\0'; s++)
+	while (i < j)
 	{
-		counter++;
+		t = buffer[i];
+		buffer[i++] = buffer[j];
+		buffer[j--] = t;
 	}
-	s--;
-	for (counter /= 2; counter > 0; counter--)
-	{
-		y = *s;
-		*s = *x;
-		*x = y;
-		x++;
-		s--;
-	}
+	return buffer;
 }
