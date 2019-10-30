@@ -6,7 +6,6 @@
  * Return: on success 1.
  * 0n error, -1  is returned, and errno is set appropriately.
  */
-
 int _putchar(char c)
 {
 	return (write(1, &c, 1));
@@ -42,7 +41,6 @@ char *_strchr(char *s, char c)
  * @exponent: the exponent for the base power number.
  * Return: - this returns the result.
  */
-
 int _power(int base, int exponent)
 {
 	int result = 1;
@@ -77,8 +75,7 @@ int _len(int num)
  * @j: end of buffer.
  * Return: Always 0.
  */
-
-char* rev_string(char *buffer, int i, int j)
+char *rev_string(char *buffer, int i, int j)
 {
 	char t;
 
@@ -88,5 +85,5 @@ char* rev_string(char *buffer, int i, int j)
 		buffer[i++] = buffer[j];
 		buffer[j--] = t;
 	}
-	return buffer;
+	return (buffer);
 }
