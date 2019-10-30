@@ -124,8 +124,8 @@ $
 
 ## Authors
 
-* [**Trevor Stevenson**](https://github.com/Tr3v1n4t0r) - [*@Tr3v1n4t0r*](https://www.https://twitter.com/tr3v1nat0r)
-* [**Kenneth Fernandez**](https://github.com/Kenfernandezjr) - [*@Kenfernandezjr*]( https://www.https://twitter.com/DrKenLove)
+* [**Trevor Stevenson**](https://github.com/Tr3v1n4t0r) - [*@Tr3v1n4t0r*](https://twitter.com/tr3v1nat0r)
+* [**Kenneth Fernandez**](https://github.com/Kenfernandezjr) - [*@Kenfernandezjr*](https://twitter.com/DrKenLove)
 
 ## License
 
