@@ -32,8 +32,16 @@ char *_itoa(int value, char *buffer, int base)
 	return (rev_string(buffer, 0, i - 1));
 }
 
+/**
+ *_abs - gets the absolute value of an int
+ *
+ *@n: int
+ *
+ *Return: absolute value of n
+ */
 unsigned int _abs(int n)
 {
 	int const mask = n >> (sizeof(int) * 8 - 1);
+
 	return ((n + mask) ^ mask);
 }
