@@ -32,6 +32,41 @@ switch cases because it cut down on time.
 * Ubuntu
 * github
 
+## Requirements
+* Allowed editors: vi, vim, emacs
+* All files are compiled on Ubuntu 14.04 LTS
+* Programs and functions are compiled with gcc 4.8.4 using the flags
+-Wall -Werror -Wextra and -pedantic
+* All files should end with a new line
+* Code should use the Betty style. It is checked using betty-style.pl and betty-doc.pl
+* The use of global variables is prohibited
+* No more than 5 functions per file
+* The prototypes of all functions should be included in a header file called holberton.h
+
+## Prototype
+
+```bash
+int _printf(const char *format, ...);
+```
+
+## Compilation
+
+```bash
+gcc -Wall -Werror -Wextra -pedantic -Wno-format *.c
+```
+
+## Format Specifiers
+
+### Supported Types
+
+| Type  | Output |
+|:-----:|:------:|
+| c | Single character |
+| s | String |
+| d | Integer in decimal |
+| i | Integer |
+| % | Percent sign |
+
 ## Authors
 
 * **Trevor Stevenson** - *Tr3v1n4t0r* - https://github.com/Tr3v1n4t0r
