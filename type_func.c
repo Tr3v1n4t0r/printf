@@ -76,7 +76,7 @@ int type_i(int d)
 
 	buffer = malloc(sizeof(int) * _len(d));
 
-	s = _itoa(d, buffer, _len(d));
+	s = _itoa(d, buffer, 10);
 
 	for (a = 0; s[a]; a++)
 		_putchar(s[a]);
