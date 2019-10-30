@@ -19,6 +19,7 @@ int _len(int num);
 int type_c(char);
 int type_s(char *);
 int type_i(int);
-void rev_string(char *s);
+char *rev_string(char *, int, int);
+char* _itoa(unsigned int value, char* buffer, int base)
 
 #endif
