@@ -70,10 +70,14 @@ int type_s(char *s)
  */
 int type_i(int d)
 {
-	int i = _len(d);
-	int a = i;
+	int a;
+	char buffer[_len(d)];
+	char *s;
 
-	for (; i > 0; i--)
-		_putchar(d % _power(10, i));
+	s = _itoa(d, buffer, _len(d));
+
+	for (a = 0; s[a]; a++)
+		_putchar(s[a]);
+
 	return (a);
 }
