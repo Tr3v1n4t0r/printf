@@ -15,6 +15,7 @@ int type_c(char);
 int type_s(char *);
 int type_i(int);
 char *rev_string(char *, int, int);
-char *_itoa(unsigned int, char *, int);
+char *_itoa(int, char *, int);
+unsigned int _abs(int);
 
 #endif
