@@ -5,10 +5,9 @@
  * @value - unsigned int value.
  * @buffer - char.
  * @base - base.
- * Return:- rev_string.
+ * Return: the string
  */
-
-char _itoa(unsigned int value, char *buffer, int base)
+char *_itoa(unsigned int value, char *buffer, int base)
 {
 
 	int i = 0;
@@ -17,20 +16,14 @@ char _itoa(unsigned int value, char *buffer, int base)
 	while (value)
 	{
 		r = value % base;
-
 		if (r >= 10)
-		{
 			buffer[i++] = 65 + (r - 10);
-		}
 		else
 			buffer[i++] = 48 + r;
-
 		value = value / base;
 	}
 	if (i == 0)
-	{
 		buffer[i++] = '0';
-	}
 
 	buffer[i] = '\0';
 
