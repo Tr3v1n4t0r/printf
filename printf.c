@@ -12,7 +12,7 @@ int _printf(const char *format, ...)
 	va_list	valist;
 	unsigned int a = 0, i;
 
-	while (format)
+	if (format)
 	{va_start(valist, format);
 		for (i = 0; format[i]; i++)
 		{
@@ -44,5 +44,8 @@ int _printf(const char *format, ...)
 			{a++;
 				_putchar(format[i]); }
 		} va_end(valist);
-		break;
-	} return (a); }
+		return (a);
+	}
+	else
+		return (0);
+}

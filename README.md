@@ -32,10 +32,100 @@ switch cases because it cut down on time.
 * Ubuntu
 * github
 
+## Requirements
+* Allowed editors: vi, vim, emacs
+* All files are compiled on Ubuntu 14.04 LTS
+* Programs and functions are compiled with gcc 4.8.4 using the flags
+-Wall -Werror -Wextra and -pedantic
+* All files should end with a new line
+* Code should use the Betty style. It is checked using betty-style.pl and betty-doc.pl
+* The use of global variables is prohibited
+* No more than 5 functions per file
+* The prototypes of all functions should be included in a header file called holberton.h
+
+## Prototype
+
+```bash
+int _printf(const char *format, ...);
+```
+
+## Compilation
+
+```bash
+gcc -Wall -Werror -Wextra -pedantic *.c
+```
+
+## Format Specifiers
+
+### Supported Types
+
+| Type  | Output |
+|:-----:|:------:|
+| c | Single character |
+| s | String |
+| d | Integer in decimal |
+| i | Integer |
+| % | Percent sign |
+
+### Return Value
+
+* The number of characters printed
+
+## Examples
+
+```c
+$ cat main.c
+#include "holberton.h"
+
+/**
+*main - Entry point
+*
+*Return: Always 0
+*/
+int main(void)
+{
+	int len;
+	int len2;
+
+	len = _printf("Let's try to printf a simple sentence.\n");
+	len2 = printf("Let's try to printf a simple sentence.\n");
+	_printf("Length:[%d, %i]\n", len, len);
+	printf("Length:[%d, %i]\n", len2, len2);
+	_printf("Negative:[%d]\n", -762534);
+	printf("Negative:[%d]\n", -762534);
+	_printf("Character:[%c]\n", 'H');
+	printf("Character:[%c]\n", 'H');
+	_printf("String:[%s]\n", "I am a string !");
+	printf("String:[%s]\n", "I am a string !");
+	len = _printf("Percent:[%%]\n");
+	len2 = printf("Percent:[%%]\n");
+	_printf("Len:[%d]\n", len);
+	printf("Len:[%d]\n", len2);
+	return (0);
+}
+$ gcc -Wall -Wextra -Werror -pedantic *.c -o printf
+$ ./printf
+Let's try to printf a simple sentence.
+Let's try to printf a simple sentence.
+Length:[39, 39]
+Length:[39, 39]
+Negative:[-762534]
+Negative:[-762534]
+Character:[H]
+Character:[H]
+String:[I am a string !]
+String:[I am a string !]
+Percent:[%]
+Percent:[%]
+Len:[12]
+Len:[12]
+$
+```
+
 ## Authors
 
-* **Trevor Stevenson** - *Tr3v1n4t0r* - https://github.com/Tr3v1n4t0r
-* **Kenneth Fernandez** - *Kenfernandezjr* - https://github.com/Kenfernandezjr
+* [**Trevor Stevenson**](https://github.com/Tr3v1n4t0r) - [*@Tr3v1n4t0r*](https://twitter.com/tr3v1nat0r)
+* [**Kenneth Fernandez**](https://github.com/Kenfernandezjr) - [*@Kenfernandezjr*](https://twitter.com/DrKenLove)
 
 ## License
 
