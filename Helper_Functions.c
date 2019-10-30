@@ -2,9 +2,9 @@
 
 /**
  * _itoa - function that converts integers into strings.
- * @value - unsigned int value.
- * @buffer - char.
- * @base - base.
+ * @value: unsigned int value.
+ * @buffer: char.
+ * @base: base.
  * Return: the string
  */
 char *_itoa(unsigned int value, char *buffer, int base)
