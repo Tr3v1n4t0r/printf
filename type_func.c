@@ -71,8 +71,10 @@ int type_s(char *s)
 int type_i(int d)
 {
 	int a;
-	char buffer[_len(d)];
+	char *buffer;
 	char *s;
+
+	buffer = malloc(sizeof(int) * _len(d));
 
 	s = _itoa(d, buffer, _len(d));
 
